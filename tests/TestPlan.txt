@@ -1,0 +1,56 @@
+README
+
+This is a practice test TypeScript project using Playwright to validate UI and API tests used to sharpen my test automation skills. 
+
+BaseURL : https://www.saucedemo.com/
+
+Credentials:
+Accepted usernames are:
+standard_user
+locked_out_user
+problem_user
+performance_glitch_user
+error_user
+visual_user
+
+
+Password for all users:
+secret_sauce
+
+Setup&teardown
+
+1. Login to the application using the credentials provided above.
+2. Take screenshot of current page 
+3. Reset cart status to 0 items
+4. Logout 
+
+Test Cases: CRUD focused
+
+TC#1: CREATE : Add product to Cart > View Cart > Checkout > Enter your info > Confirm Order Detail > Finish checkout
+Arrange: 
+Act:
+Assert: 
+
+TC#2 : READ: View a product > Sort product order
+Arrange: 
+Act: 
+Assert: 
+
+TC#3: UPDATE : Add multiple products to Cart > Validate multiple products are added to Cart > Checkout > Enter your info > Confirm Order Detail > Finish checkout
+Arrange: 
+Act:
+Assert: 
+
+TC#4: DELETE : Remove a product from Cart > Validate product is removed from Cart 
+Arrange: 
+Act:
+Assert: 
+
+
+
+
+
+
+
+
+

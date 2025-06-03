@@ -1,0 +1,13 @@
+{
+  "name": "sauce-demo-automation",
+  "version": "1.0.0",
+  "description": "PlayWright Test Automation for Sauce Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.41.0",
+    "typescript": "^5.3.3"
+  }
+}
