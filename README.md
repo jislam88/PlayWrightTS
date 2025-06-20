@@ -33,14 +33,14 @@
 - Logout 
 
 ## 4. Test Data
-- CSV file for Firstname, Lastname, Zipcode (/data/test-data.csv)
-- Accepted usernames are:
-    standard_user
-    locked_out_user
-    problem_user
-    performance_glitch_user
-    error_user
-    visual_user
+        CSV file for Firstname, Lastname, Zipcode (/data/test-data.csv)
+        Accepted usernames are:
+        standard_user
+        locked_out_user
+        problem_user
+        performance_glitch_user
+        error_user
+        visual_user
 
 
 ## Password for all users:
