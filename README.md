@@ -6,7 +6,7 @@
 
 ##1. npm init playwright@latest > Select TypeScript + Github actions
 ##2. Git clone repo or download repo and extract file
-##3. npx playwright test --headed --ui 
+##3. npx playwright test jam.spec.ts --headed --ui 
 
 
 # Project Name: jam.spec.ts
@@ -24,6 +24,7 @@
 - TC#2: Sort product order
 - TC#3: Add multiple products to Cart 
 - TC#4: Remove a product from Cart
+- TC#5: Data-driven tests where firstname, last name and zipcode are from a spreadsheet
 
 ## 3. Setup & Teardown
 - Login to the application using the credentials provided above.
@@ -32,24 +33,25 @@
 - Logout 
 
 ## 4. Test Data
+- CSV file for Firstname, Lastname, Zipcode (/data/test-data.csv)
 - Accepted usernames are:
-standard_user
-locked_out_user
-problem_user
-performance_glitch_user
-error_user
-visual_user
+    standard_user
+    locked_out_user
+    problem_user
+    performance_glitch_user
+    error_user
+    visual_user
 
 
-Password for all users:
-secret_sauce
+## Password for all users:
+    secret_sauce
 
 ## 5. Test Environment
 - BaseURL : https://www.saucedemo.com/
 
-## 6. Test Execution
+## 6. Test Executions
 - Run tests in headless mode
 - Generate HTML report
 - Upload report to GitHub
 
-## 7.                           
+## 7. ENJOY!                         
