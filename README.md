@@ -50,7 +50,7 @@
 - BaseURL : https://www.saucedemo.com/
 
 ## 6. Test Executions
-- Run tests in headless mode
+- Run tests in headed mode
 - Generate HTML report
 - Upload report to GitHub
 
