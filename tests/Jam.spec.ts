@@ -5,7 +5,7 @@
 // Implement BDD for test cases and feature files
 
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage'; 
+import { LoginPage } from '../pages/LoginPage';
 import { InventoryPage } from '../pages/InventoryPage';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -19,7 +19,7 @@ const records = parse(csvData, {
     skip_empty_lines: true
 });
 
-//***** Setup & Teardown before and after all tests *****
+// ***** Setup & Teardown before and after all tests *****
 test.beforeEach('Login to SauceDemo Standard Account', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -31,7 +31,7 @@ test.afterEach('Reset Cart & Logout', async ({ page }) => {
     await inventoryPage.resetCartAndLogout();
 });
 
-//***** Test Cases *****
+// ***** Test Cases *****
 
 test.describe('Group One', () => {
     test('TC#1 Add product to Cart and checkout', async ({ page }) => {
@@ -79,6 +79,7 @@ test.describe('Group Two', () => {
         await expect(page.locator('[data-test="total-info-label"]')).toContainText('Price Total');
         await page.locator('[data-test="finish"]').click();
         await expect(page.locator('[data-test="complete-header"]')).toContainText('Thank you for your order!');
+        await page.locator('[data-test="back-to-products"]').click();
     });
 
     test('TC#4 Remove products from Cart', async ({ page }) => {

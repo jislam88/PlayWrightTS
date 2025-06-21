@@ -1,5 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
-import config from '../tests/playwright.config';
+import config from '../playwright.config';
 import { LoginPage } from './LoginPage';
 
 export class InventoryPage {
